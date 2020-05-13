@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 module "network" {
-  source               = "../../"
+  source               = "git::https://github.com/vlad-m-r/terraform-module-aws-network.git?ref=master"
   vnet_cidr_block      = "10.240.0.0/16"
   location             = "West US"
   resource_name_prefix = "example-module-"
