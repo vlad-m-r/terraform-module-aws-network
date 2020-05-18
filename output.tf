@@ -5,8 +5,8 @@ output "azurerm_resource_group_name" {
 
 output "subnets" {
   value = {
-    for subnet in azurerm_subnet.main:
-    subnet.name => subnet.id
+    for subnet in var.subnets:
+    subnet.name => azurerm_subnet.main[subnet.name].name
   }
 }
 
