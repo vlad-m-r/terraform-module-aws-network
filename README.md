@@ -1,6 +1,4 @@
-# WIP...
-
-## Azure Network Terraformo module
+## Azure Network Terraform module
 
 Terraform module which sets up VNet resources on Azure.
 
